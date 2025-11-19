@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atletas Inspiradores do Esporte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(0,0,0,0.7);
+            padding: 3rem 1rem;
+            text-align: center;
+            background: linear-gradient(to right, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .card-img {
+            height: 280px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .sport-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 2.5rem;
+            background: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 50%;
+            backdrop-filter: blur(5px);
+        }
+        .card-content {
+            padding: 1.8rem;
+        }
+        .sport-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: #feca57;
+        }
+        .athlete {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            color: #fff;
+        }
+        .quote {
+            font-style: italic;
+            opacity: 0.9;
+            line-height: 1.6;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+        .flag {
+            font-size: 1.8rem;
+            margin-top: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Atletas Inspiradores</h1>
+        <p class="subtitle">Histórias de superação, talento e legado que transformaram o esporte mundial</p>
+    </header>
+
+    <div class="container">
+        <!-- Futebol -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1628880211746-87f5e8124b66?w=800')">
+                <div class="sport-icon"><i class="fas fa-futbol"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Futebol</h3>
+                <p class="athlete">Pelé</p>
+                <p class="quote">"O sucesso não é acidente. É trabalho duro, perseverança, aprendizado, estudo, sacrifício e, acima de tudo, amor pelo que você faz."</p>
+                <p class="flag">🇧🇷 Rei do Futebol • 3x Campeão do Mundo</p>
+            </div>
+        </div>
+
+        <!-- Natação -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1530549385787-cdce957dea4e?w=800')">
+                <div class="sport-icon"><i class="fas fa-swimmer"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Natação</h3>
+                <p class="athlete">Michael Phelps</p>
+                <p class="quote">"Eu não nado apenas para ganhar medalhas. Eu nado para provar a mim mesmo que posso ser o melhor."</p>
+                <p class="flag">🇺🇸 28 medalhas olímpicas • O maior de todos os tempos</p>
+            </div>
+        </div>
+
+        <!-- Atletismo -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1552670366-1caf8faaa375?w=800')">
+                <div class="sport-icon"><i class="fas fa-running"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Atletismo</h3>
+                <p class="athlete">Usain Bolt</p>
+                <p class="quote">"Eu não vim ao mundo para ser comum. Vim para ser o maior."</p>
+                <p class="flag">🇯🇲 8 ouros olímpicos • O homem mais rápido da história</p>
+            </div>
+        </div>
+
+        <!-- Basquete -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1519869491915-8af8a8bf7c1c?w=800')">
+                <div class="sport-icon"><i class="fas fa-basketball-ball"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Basquete</h3>
+                <p class="athlete">Michael Jordan</p>
+                <p class="quote">"Eu falhei mais de 9000 arremessos na minha carreira. Perdi quase 300 jogos. 26 vezes confiaram em mim para o arremesso da vitória e eu errei. Eu falhei muitas e muitas vezes na minha vida. E é por isso que eu consegui."</p>
+                <p class="flag">🇺🇸 6x Campeão NBA • O GOAT</p>
+            </div>
+        </div>
+
+        <!-- Tênis -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1592920792735-50b35910f442?w=800')">
+                <div class="sport-icon"><i class="fas fa-table-tennis"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Tênis</h3>
+                <p class="athlete">Serena Williams</p>
+                <p class="quote">"Eu não jogo para ser boa. Eu jogo para ser a melhor."</p>
+                <p class="flag">🇺🇸 23 Grand Slams • Rainha do tênis</p>
+            </div>
+        </div>
+
+        <!-- Vôlei -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1612872089115-69646ba68659?w=800')">
+                <div class="sport-icon"><i class="fas fa-volleyball-ball"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Vôlei</h3>
+                <p class="athlete">Gibinha (Giba)</p>
+                <p class="quote">"No vôlei, como na vida, o importante não é cair, mas levantar e continuar lutando."</p>
+                <p class="flag">🇧🇷 Ouro olímpico 2004 • Lenda brasileira</p>
+            </div>
+        </div>
+
+        <!-- Judô -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1595590421943-4527c99eca3e?w=800')">
+                <div class="sport-icon"><i class="fas fa-martial-arts"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Judô</h3>
+                <p class="athlete">Teddy Riner</p>
+                <p class="quote">"O judô me ensinou respeito, disciplina e que o tamanho não é tudo."</p>
+                <p class="flag">🇫🇷 11x Campeão Mundial • Gigante invencível</p>
+            </div>
+        </div>
+
+        <!-- Skate -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1603785561592-38f2a7f8ed89?w=800')">
+                <div class="sport-icon"><i class="fas fa-skating"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Skate</h3>
+                <p class="athlete">Rayssa Leal</p>
+                <p class="quote">"Eu só queria me divertir andando de skate, e acabei inspirando o mundo."</p>
+                <p class="flag">🇧🇷 Fadinha • Prata olímpica aos 13 anos</p>
+            </div>
+        </div>
+
+        <!-- Boxe -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1593786108676-8e67c37550c0?w=800')">
+                <div class="sport-icon"><i class="fas fa-boxing-glove"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Boxe</h3>
+                <p class="athlete">Muhammad Ali</p>
+                <p class="quote">"Voe como uma borboleta, pique como uma abelha."</p>
+                <p class="flag">🇺🇸 3x Campeão Mundial dos Pesados • The Greatest</p>
+            </div>
+        </div>
+
+        <!-- Handebol -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1628663033575-2c9fd3e0c02e?w=800')">
+                <div class="sport-icon"><i class="fas fa-hand-paper"></i></div>
+            </div>
+            <div class="card-content">
+                <h3 class="sport-title">Handebol</h3>
+                <p class="athlete">Mikkel Hansen</p>
+                <p class="quote">"Handebol é paixão, força e inteligência em movimento."</p>
+                <p class="flag">🇩🇰 3x Melhor do Mundo • Lenda dinamarquesa</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Feito com ❤️ para celebrar os maiores do esporte mundial • 2025</p>
+    </footer>
+</body>
+</html>
